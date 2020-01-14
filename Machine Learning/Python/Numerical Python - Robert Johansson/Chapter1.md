@@ -30,5 +30,10 @@
      
      $ python hello.py
      Hello from Python!
-     ```
+     
+     $ python --version
+     Python 3.6.5
+```
+* Specific versions of the Python interpreter are available througth the commands such as, for example, python 2.7 and python 3.6
+     
      
