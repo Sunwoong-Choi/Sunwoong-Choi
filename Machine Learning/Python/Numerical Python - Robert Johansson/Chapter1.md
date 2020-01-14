@@ -12,5 +12,5 @@
       ** Users typically only interact the top three layers, but the bottom layer constitutes a very important part of software stack.
 ## It is also significant that Python is free and open source.
 1. 바보
- * 안녕
- * 
+  * 안녕
+  * 
