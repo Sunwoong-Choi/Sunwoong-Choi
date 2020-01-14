@@ -3,7 +3,7 @@
     1. Good code readability, rapid code development.
     2. Low level program language, such as C or Fortan is necessary to obtain the best pergormance out of the hardware that runs the code
     3. Trade-off between high performance and long development time and lower performance but shorter development time.
-        * Use a multilanguage model, whre a higl-level language is used to interface libraries(rapid code development) and software packages written in low-level languages(performance of low-level languages).
+     * Use a multilanguage model, whre a higl-level language is used to interface libraries(rapid code development) and software packages written in low-level languages(performance of low-level languages).
 ## Eco-system of Python
    * Environments : IPython console, Jupyter Notebook, ...
    * Python Language : Python2, Python3, ...
