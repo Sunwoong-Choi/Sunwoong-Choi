@@ -27,13 +27,43 @@
      ```python
      hello.py
      print("Hello from Python!")
-     
      $ python hello.py
      Hello from Python!
-     
      $ python --version
      Python 3.6.5
-```
+     ```
 * Specific versions of the Python interpreter are available througth the commands such as, for example, python 2.7 and python 3.6
-     
+* Setting up virtual python enviromnent is highly recommended.
+* A Python inter preter can also be used as an interactive console(also known as REPL : Read-EValuate-Print-Loop) by entering python at the command prompt.
+## IPython Console
+* Python interpreter does not by itself provide a satisfactory environment for interactive computing.
+ * IPython is and enhanced command-line REPL environment for Python with additional features
+  * In fact, IPython is now much more than an enhanced Python command-line interface, for instance, under the hood IPython is a client-server application, which seperates the frontend(user interface) from the backend(kernel) that executes thy Python code.
+** IPython installation corresponds to a specific version of Python.
+** IPython is used in many different context in scientific computing with Python, for example, as a kernel in the Jupyter Notebook application and in the Spyder IDE
+#### A brief overview of some of the IPython features.
+## Input and Output Catching
+* In the IPython console, the input prompt is the denoted as In[1] : and the corresponding output is denoted as Out[1]:
+     ```Python
+     In [1]: 3 * 3
+     Out[1]: 9
+     In [2]: In[1]                     
+     Out[2]: '3 * 3'
+     In [3]: Out[1]                      
+     Out[3]: 9
+     In [4]: In                   
+     Out[4]: ['', '3 * 3', 'In[1]', 'Out[1]', 'In']
+     In [5]: Out
+     Out[5]: {1: 9, 2: '3 * 3', 3: 9, 4: ['', '3 * 3', 'In[1]', 'Out[1]', 'In', 'Out']}
+     ```
+* A single underscore _ is a shorthand notation for referring to the most recent output, and a double underscore __ refers to the output that preceded the most recent output.
+     ```Python
+     In [6]: 1 + 2                        
+     Out[6]: 3
+     In [7]: 1 + 2; # output surpressed by the semicolon
+     In [8]: x = 1 # no output for assignmnets
+     In [9]: x =2 ; x # these are two statements. The value of 'x' is shown in the output                       
+     Out[9]: 2
+     ```
+## Autocompletion and Object introspection(later.)
      
