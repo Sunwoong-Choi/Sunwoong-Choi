@@ -19,3 +19,16 @@
     * a web application, all in one documnet.
 * The Spyder Integrated Development Environment(IDE)
     * write and interactively run Python code.
+## Python
+ * The python promgramming language and the standard implementation of the Python interpreter are frequently updated, and made available throught new releases.
+## Interpreter
+ * The standard way to execute Python code is to run the program
+ ** On most systems, the Python interpreter is invoked using the 'python' command.
+     ```python
+     hello.py
+     print("Hello from Python!")
+     
+     $ python hello.py
+     Hello from Python!
+     ```
+     
