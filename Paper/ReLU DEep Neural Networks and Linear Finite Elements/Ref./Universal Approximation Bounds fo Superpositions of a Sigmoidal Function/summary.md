@@ -5,4 +5,5 @@
 ***
 * Related with Fourier representation.
 * Dealing with linear combination of sigmoidal function.
-** still working on it...
+
+*still working on it...*
