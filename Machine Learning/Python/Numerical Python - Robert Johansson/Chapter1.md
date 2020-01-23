@@ -81,5 +81,23 @@
      In [5]: math.cos?                                                                                                              Signature: math.cos(x, /)
      Docstring: Return the cosine of x (measured in radians).
      Type: builtin_function_or_method
+     ``` ###### 
+*(in python 3.7.0)*
+* From a developer's point of view, it is convenient to be able to document a code together with the implementation.
+## Interactions with the System Shell
+* Anything that follows an exclamation mark is evaluated using the system shell (such as bash shell).
+     ```Python
+     In [21]: !ls                                                                        
+     AIPND_Sunwoong_Choi		C				C++				aipnd_review			cat_vocalisation_analysis	      listentothis_player
+     In [22]: files = !ls                                                                                                          In [23]: len(files)Out[23]: 6
      ```
-###### *(in python 3.7.0)*
+     *Use the IPython console as a system shell.*
+     ```Python
+     In [27]: file = "train.py"
+     In [28]: !ls -1 $file 
+     train.py
+     ```
+     *pass the values of Python variables to shell commands.*
+* This method for interacting with the OS is a very powerful feature that makes it easy to navigate the file system and to use the IPython console as a system shell, espically when processing data files.
+
+## IPython Extensions
