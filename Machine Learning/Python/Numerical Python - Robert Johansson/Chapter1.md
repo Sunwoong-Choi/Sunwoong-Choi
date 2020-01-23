@@ -81,18 +81,21 @@
      In [5]: math.cos?                                                                                                              Signature: math.cos(x, /)
      Docstring: Return the cosine of x (measured in radians).
      Type: builtin_function_or_method
-     ``` ###### 
+     ```
 *(in python 3.7.0)*
 * From a developer's point of view, it is convenient to be able to document a code together with the implementation.
 ## Interactions with the System Shell
 * Anything that follows an exclamation mark is evaluated using the system shell (such as bash shell).
      ```Python
      In [21]: !ls                                                                        
-     AIPND_Sunwoong_Choi		C				C++				aipnd_review			cat_vocalisation_analysis	      listentothis_player
-     In [22]: files = !ls                                                                                                          In [23]: len(files)Out[23]: 6
+     AIPND_Sunwoong_Choi C C++ aipnd_review cat_vocalisation_analysis listentothis_player
+     In [22]: files = !ls                                                                                                          In [23]: len(files)
+     Out[23]: 6
      ```
      *Use the IPython console as a system shell.*
      ```Python
+     In [25] import os
+     In [26] os.chdir("/Users/sunwoong/Desktop/coding/AIPND_Sunwoong_Choi") # change directory.
      In [27]: file = "train.py"
      In [28]: !ls -1 $file 
      train.py
