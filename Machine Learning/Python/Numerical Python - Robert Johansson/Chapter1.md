@@ -92,7 +92,7 @@
      In [22]: files = !ls                                                                                                          In [23]: len(files)
      Out[23]: 6
      ```
-     *Use the IPython console as a system shell.*
+     > *Use the IPython console as a system shell.*
      ```Python
      In [25] import os
      In [26] os.chdir("/Users/sunwoong/Desktop/coding/AIPND_Sunwoong_Choi") # change directory.
@@ -100,7 +100,7 @@
      In [28]: !ls -1 $file 
      train.py
      ```
-     *pass the values of Python variables to shell commands.*
+     > *Pass the values of Python variables to shell commands.*
 * This method for interacting with the OS is a very powerful feature that makes it easy to navigate the file system and to use the IPython console as a system shell, espically when processing data files.
 
 ## IPython Extensions
