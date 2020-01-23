@@ -65,5 +65,21 @@
      In [9]: x =2 ; x # these are two statements. The value of 'x' is shown in the output                       
      Out[9]: 2
      ```
-## Autocompletion and Object introspection(later.)
-     
+## Autocompletion and Object introspection.
+* In IPython, pressing TAB key activates autocompletion, which displays a list of symbols with names that are valid completions of what has already been typed.
+     * contextual, look for matching variables and functions in the current namespace or among the attributes and methods of a class when invoked after the mae of a class instance.
+     ```Python
+     In[10]: import os
+     In[11]: os.w<TAB>
+     os.wait os.wait3 os.wait4 os.walk os.write os.writev
+     ```
+* This feature is called object introspection *(the examining of your own thoughts, ideas, and feelings.)*, it works on midules, classes, and their attributes and methods and on functions and their arguments.
+## Documentation
+* Object introspection is convenient for exploring the API of a module and its member classes and functions. *(API : Application Programming Interface), together with "docstrings", it provides a bulit-in dynamice reference manual.
+* A Python object followed by a question mark displays the documentation string for the object, which is simailar to the Python function help
+     ```Python
+     In [5]: math.cos?                                                                                                              Signature: math.cos(x, /)
+     Docstring: Return the cosine of x (measured in radians).
+     Type: builtin_function_or_method
+     ```
+###### *(in python 3.7.0)*
