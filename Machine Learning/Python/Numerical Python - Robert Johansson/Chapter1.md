@@ -121,13 +121,5 @@
 
      Automagic is ON, % prefix IS NOT needed for line magics.
      ```
-     ```Python
-     %%latex 
-     \begin{document} 
-     \title{Universal approximation bounds for superposition of a sigmoidal function.} 
-     \author{Sunwoong Choi}
-     \affiliation{Applied Mathematics, Dongguk University} 
-     \end{document} 
-     ```
 
- 
+*how to run latex code with the magic function '$$latex'?*
