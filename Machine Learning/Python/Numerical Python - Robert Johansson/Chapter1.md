@@ -104,3 +104,30 @@
 * This method for interacting with the OS is a very powerful feature that makes it easy to navigate the file system and to use the IPython console as a system shell, espically when processing data files.
 
 ## IPython Extensions
+* IPython provides extension commands that are called magic functions in IPython
+     * A single % sign : one-line commands
+     * Two % sings : commands that operate on cells
+     ```Python
+     In [29]: %lsmagic?                                                                     
+     Docstring: List currently available magic functions.
+     File:      /Library/Frameworks/Python.framework/Versions/3.7/lib/python3.7/site-packages/IPython/core/magics/basic.py
+     In [30]: %lsmagic                                                                            
+     Out[30]: 
+     Available line magics:
+     %alias  %alias_magic  %autoawait  %autocall  %autoindent  %automagic  %bookmark  %cat  %cd  %clear  %colors  %conda  %config  %cp  %cpaste  %debug  %dhist  %dirs  %doctest_mode  %ed  %edit  %env  %gui  %hist  %history  %killbgscripts  %ldir  %less  %lf  %lk  %ll  %load  %load_ext  %loadpy  %logoff  %logon  %logstart  %logstate  %logstop  %ls  %lsmagic  %lx  %macro  %magic  %man  %matplotlib  %mkdir  %more  %mv  %notebook  %page  %paste  %pastebin  %pdb  %pdef  %pdoc  %pfile  %pinfo  %pinfo2  %pip  %popd  %pprint  %precision  %prun  %psearch  %psource  %pushd  %pwd  %pycat  %pylab  %quickref  %recall  %rehashx  %reload_ext  %rep  %rerun  %reset  %reset_selective  %rm  %rmdir  %run  %save  %sc  %set_env  %store  %sx  %system  %tb  %time  %timeit  %unalias  %unload_ext  %who  %who_ls  %whos  %xdel  %xmode
+
+     Available cell magics:
+     %%!  %%HTML  %%SVG  %%bash  %%capture  %%debug  %%file  %%html  %%javascript  %%js  %%latex  %%markdown  %%perl  %%prun  %%pypy  %%python  %%python2  %%python3  %%ruby  %%script  %%sh  %%svg  %%sx  %%system  %%time  %%timeit  %%writefile
+
+     Automagic is ON, % prefix IS NOT needed for line magics.
+     ```
+     ```Python
+     %%latex 
+     \begin{document} 
+     \title{Universal approximation bounds for superposition of a sigmoidal function.} 
+     \author{Sunwoong Choi}
+     \affiliation{Applied Mathematics, Dongguk University} 
+     \end{document} 
+     ```
+
+ 
