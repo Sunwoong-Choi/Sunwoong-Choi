@@ -139,7 +139,7 @@
      * A new import after a *%reset* will import re-enable a cached version of the module from the previous import, a reimport of previously impoted module can often be achieved by using the *reload* function from *IPython.lib.deepreload.*
 
 ## Timing and Profiling Code
-* *%timeit* and *%time* commands provide simple benchmarking facilities that are useful when looking for bottlencks and attempting to optimize code, they run a Python statement a number of times and gives an estimate fot he runtime.*(%%timeit is for a multiline cell.)*
+* *%timeit* and *%time* commands provide simple benchmarking facilities that are useful when looking for bottlencks and attempting to optimize code, they run a Python statement a number of times and gives an estimate of the runtime.*(%%timeit is for a multiline cell.)*
 * *%time* and *%%time* only run the statement once and therefore give a less accurate estimate of the average runtime.
 * While the *%timeit* and *%time* commands are useful for measuring the elapsed runtime of a computation, they do not give any detailed information about what part of the computation takes more time.
      * We should use *%prun* for this case.
