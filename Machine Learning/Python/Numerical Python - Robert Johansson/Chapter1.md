@@ -10,7 +10,7 @@
    * Python Package : numpy, scipy, matplotlib, ...
    * System and system libraies : OS, BLAS, LAPACK, ...
       ** Users typically only interact the top three layers, but the bottom layer constitutes a very important part of software stack.
-## It is also significant that Python is free and open source.
+*It is also significant that Python is free and open source.*
 
 ## Environments for Computing with Python
 * The Python interpreter or the IPython console
@@ -138,9 +138,10 @@
 * It is necessary to reimport modules after *%reset* command has been used.
      * A new import after a *%reset* will import re-enable a cached version of the module from the previous import, a reimport of previously impoted module can often be achieved by using the *reload* function from *IPython.lib.deepreload.*
 
-##Timing and Profiling Code
+## Timing and Profiling Code
 * *%timeit* and *%time* commands provide simple benchmarking facilities that are useful when looking for bottlencks and attempting to optimize code, they run a Python statement a number of times and gives an estimate fot he runtime.*(%%timeit is for a multiline cell.)
 * *%time* and *%%time* only run the statement once and therefore give a less accurate estimate of the average runtime.
 * While the *%timeit* and *%time* commands are useful for measuring the elapsed runtime of a computation, they do not give any detailed information about what part of the computation takes more time.
      * We should use *%prun* for this case.
-     
+
+#### Python or the IPython interpreter and a good text editor are all that are required for afull productive Python development environment. However, in the following sections, we will look in to Jupyter Notebook and Spyder, provide richer features that improve productivity when working with interactive and exploratory computing applications.
