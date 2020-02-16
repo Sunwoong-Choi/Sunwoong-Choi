@@ -122,4 +122,25 @@
      Automagic is ON, % prefix IS NOT needed for line magics.
      ```
 
-*how to run latex code with the magic function '$$latex'?*
+## File System Navigation
+* IPython provides commands for navigating and exploring the file system. Such commands are : *%ls, %pwd, %cd, %cp, %less, %%writefile filename*
+* IPython is convenient to explore the file system as is the system shell, IPython commands are system independent.
+
+## Running Scripts fro the IPython Console
+* With command, *%run*, an external Python source code can be executed within an interactive IPython session.
+
+## Debugger
+* IPython includes a handy debugger mode, which can be invoked postmortem after a Python exception(error) has been raised.
+* With command, *%debug*, we can eliminate the need to rerun the program from the beginning using the debugger mode or after having employed the common debugging method of sprinkiling print statements into the code.
+
+## Reset
+* Resetting the namespace of IPython session is often useful to ensure that a program is run in a pristine environment, uncluttered by existing variables and functions.
+* It is necessary to reimport modules after *%reset* command has been used.
+     * A new import after a *%reset* will import re-enable a cached version of the module from the previous import, a reimport of previously impoted module can often be achieved by using the *reload* function from *IPython.lib.deepreload.*
+
+##Timing and Profiling Code
+* *%timeit* and *%time* commands provide simple benchmarking facilities that are useful when looking for bottlencks and attempting to optimize code, they run a Python statement a number of times and gives an estimate fot he runtime.*(%%timeit is for a multiline cell.)
+* *%time* and *%%time* only run the statement once and therefore give a less accurate estimate of the average runtime.
+* While the *%timeit* and *%time* commands are useful for measuring the elapsed runtime of a computation, they do not give any detailed information about what part of the computation takes more time.
+     * We should use *%prun* for this case.
+     
