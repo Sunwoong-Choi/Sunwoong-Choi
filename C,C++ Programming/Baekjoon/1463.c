@@ -1,3 +1,9 @@
+//===----------------------------1463.c------------------------------------===//
+// Basic DP Problem. (First)
+// Bottom - up method.
+// First use of ternary operator.
+// https://www.acmicpc.net/problem/1463
+//===----------------------------------------------------------------------===//
 
 #include <stdio.h>
 int opt_num[1000001] = {0};
@@ -24,6 +30,3 @@ int main(){
     printf("%d",opt_num[N]);
     return 0;
 }
-
-/* Basic DP problem, Bottom-up method, Ternary operator
-   https://www.acmicpc.net/problem/1463 */
