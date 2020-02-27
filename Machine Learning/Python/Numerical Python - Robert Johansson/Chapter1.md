@@ -145,3 +145,47 @@
      * We should use *%prun* for this case.
 
 #### Python or the IPython interpreter and a good text editor are all that are required for afull productive Python development environment. However, in the following sections, we will look in to Jupyter Notebook and Spyder, provide richer features that improve productivity when working with interactive and exploratory computing applications.
+
+### Jupyter
+* Jupyter project includes the Python independent frontends and the computational backends, known as kernels.
+     * The frontend talks to multiple kernels(computational backends).
+     * The kernel maintains the state of the interpreter and performs the actual computations, while the frontend manages how code is entered and organized and how the results of calculations are visualized to the user.
+
+### The Jupyter QtConsole
+* The QtConsole is launched by *$ jupyter qtconsole*, and is capable of displaying rich media objects such as images, figures, and mathematical equations.
+
+### The Jupyter Notebook
+* The notebook environment allows to write and to run code, to display the output produced by the code, and to document and interpret the code and the results:all in one document.
+* The Jupyter notebook is launched by *$jupyter notebook*
+     * will serve up a server on port 8888 on localhost
+     
+### Jupyter Lab
+* Jupyter Lab is a new alternative development environment from the Jupyter project, combines the Jupyter Notebook interface with a file browser, text editor, shell, and IPython consoles, in a web-based IDE-like env.
+
+### Cell Types
+* Code : A code cell can contain an arbitrary amount of multiline Python code.
+* Markdown : The content of Markdown cell can contain marked-up plain text, which is interpreted using the Markdown language and HTML
+* Headings : Heading cells can be used to structure a notebook into sections.
+* Raw : A raw text cell is displated without any processing.
+
+### Editing cells
+* The notebook uses a two-mode input interface, with an edit mode and a command mode.
+     ** Shortcut mapping can be found with entering h in Jupyter Notebook.
+
+### Markdown cells
+* One of the key features of the Jupyter Notebook is the code cells and output cells can be complemented with documentation contained in text cells.
+     ** Markdown formatting(grammer) can be found online.
+> From here, all practice is done via localhost, Jupyter Notebook.
+
+### Rich Output Display
+* The default output cell formatting is a string representation of the object, generated, for example, by the *__repr__* method.
+* The IPython.display module proveds several classed and functions the make it easy to programmatically render formatted ouput in a notebook.
+
+### nbconvert
+* HTML : *$jupyter nbconvert --to html Notebook.ipynb*
+* PDF : *$jupyter nbconvert --to pdf Notebook.ipynb*
+     ** *$jupyter nbconvert --to pdf --template cumtom_template.tplx Notebook.ipynb* , this result is LaTeX and PDF documnents where the title and author fields are set as requested in the template.
+* Python : *$jupyter nbconvert --to python Notebook.ipynb*
+
+### Spyder
+* Spyder is an excellent free IDE that is particularly well suited for computing and data analysis using Python.
