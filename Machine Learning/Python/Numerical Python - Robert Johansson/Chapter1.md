@@ -174,7 +174,7 @@
 
 ### Markdown cells
 * One of the key features of the Jupyter Notebook is the code cells and output cells can be complemented with documentation contained in text cells.
-     ** Markdown formatting(grammer) can be found online.
+     * Markdown formatting(grammer) can be found online.
 > From here, all practice is done via localhost, Jupyter Notebook.
 
 ### Rich Output Display
