@@ -10,5 +10,6 @@
 * AIPND
 # DL
 * deeplearningbook
+# C,C++ Programming
 ***
-* Bioinformatics(?)
+* Quant?
