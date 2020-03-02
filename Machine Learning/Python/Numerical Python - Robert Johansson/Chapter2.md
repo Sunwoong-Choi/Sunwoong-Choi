@@ -97,4 +97,4 @@ array operations.
 * Using strides to describe the mapping of array index to array memory offset is clever because it can be used to describe
 different mapping strategies, and many common operations on arrays.
   * For example, *transpose* can be implemented by simply changing the strides attribute.
-  * More study needed about tranpose and strides. *
+  * *More study needed about tranpose and strides.*
